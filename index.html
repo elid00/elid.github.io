@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-translate="pageTitle">Forjador de mundos. Guerrero del detalle.</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Brush&display=swap" rel="stylesheet">
+  <!-- FontAwesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="icon" href="profile.png" type="image/x-icon">
+</head>
+<body>
+     <!-- Particles Container -->
+  <div id="particles-js"></div>
+
+
+  <header class="navbar">
+    <div class="navbar-container">
+      <div class="logo"><i class="fas fa-globe"></i><span data-translate="logoText"> Forjador de mundos. Guerrero del detalle. </span><i class="fas fa-dagger"></i></div>
+  
+      <div class="actions">
+        <div class="language-selector">
+          <img src="images/es-flag.svg" alt="Español" data-lang="es" class="lang-flag active">
+          <img src="images/us-flag.svg" alt="English" data-lang="en" class="lang-flag">
+        </div>
+        <button id="audio-toggle" title="Activar/Desactivar Audio" aria-label="Activar o desactivar audio"><i class="fas fa-volume-up"></i></button>
+        <button id="theme-toggle" title="Cambiar tema" aria-label="Cambiar entre tema claro y oscuro"><i class="fas fa-sun"></i></button>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">☰</button>
+      </div>
+  
+      <nav id="nav-links" class="nav-links">
+        <a href="#experiencia" data-translate="navProjects">🚀 Proyectos Destacados</a>
+        <a href="#aportacion" data-translate="navContribution">✨ Mi Aportación</a>
+        <a href="#educacion" data-translate="navEducation">🎓 Educación</a>
+        <a href="#habilidades" data-translate="navSkills">🛠️ Competencias Digitales</a>
+        <a href="#idiomas" data-translate="navLanguages">📖 Idiomas</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="info">
+      <h1>Blending EngineK</h1>
+      <h2 data-translate="heroSubtitle">Donde termina el código, nace la leyenda.</h2>
+      <ul>
+        <li data-translate="heroLocation">📍 España</li>
+        <li>✉️ <a href="mailto:blending.enginek@gmail.com" id="email-link">blending.enginek@gmail.com</a></li>
+        <li><i class="fab fa-github"></i> <a href="https://github.com/BlendingEngineK" target="_blank">GitHub</a></li>
+        <li><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/blending-enginek" target="_blank"> LinkedIn</a></li>
+        <li><i class="fab fa-instagram"></i> <a href="https://www.instagram.com/blending_enginek/" target="_blank">Instagram</a></li>
+      </ul>
+      
+    </div>
+    <div class="photo" data-project-id="profile">
+      <img src="profile.png" alt="Foto de Blending EngineK" id="profile-img">
+      <video id="profile-video-preview" src="videos/Perfil.mp4" muted loop playsinline style="display: none; width: 100%; height: 100%; object-fit: cover;"></video>
+    </div>
+  </section>
+
+  <section id="sobre-mi">
+    <h2 data-translate="aboutTitle">Sobre mí: Gabriel Huerta</h2>
+    <p data-translate="aboutP1">Mi viaje como diseñador de videojuegos nace de una profunda pasión por las historias que nos hacen sentir vivos. Experiencias como las de la saga <em>Souls</em> no solo me enseñaron sobre la superación y la resiliencia, sino que encendieron en mí el deseo de construir mundos que ofrezcan ese mismo nivel de desafío y emoción. Mi objetivo es dar vida a esos mundos que he visualizado, creando refugios e historias que permitan a otros jugadores desconectar y vivir sus propias aventuras.</p>
+    <p data-translate="aboutP2New">Mi identidad profesional, <strong>Blending EngineK</strong>, es un reflejo de mi enfoque técnico y creativo. 'Blending' por mi destreza en <strong>Blender</strong> para el modelado 3D, y 'Engine' porque simboliza mi capacidad para ser el motor que impulsa los proyectos, dominando tanto <strong>Unreal Engine</strong> como <strong>Unity</strong>. La 'K' es un guiño a mis influencias, desde la estética samurái a la mitología nórdica, que inspiran mi búsqueda de un estilo realista y de alta calidad.</p>
+    <p data-translate="aboutP3">Aunque mi foco está en el realismo y en exprimir el potencial de Unreal, también cuento con experiencia práctica en <strong>Unity</strong>, motor con el que he desarrollado tres juegos, lo que me ha dado una base sólida y versátil en el desarrollo. Busco la oportunidad de unirme a un equipo donde pueda aportar mi visión como 'Forjador de mundos' y mi habilidad como 'Guerrero del detalle', para crear no solo videojuegos, sino leyendas.</p>
+  </section>
+
+  <section id="aportacion">
+    <h2 data-translate="contributionTitle">Lo que Aporto a la Forja</h2>
+    <div class="contribution-container">
+      <div class="contribution-card">
+        <h3><i class="fas fa-drafting-compass"></i> <span data-translate="designerTitle">Como Diseñador</span></h3>
+        <ul>
+          <li data-translate="designerSkill1"><strong>Visión Creativa y Narrativa:</strong> Convierto ideas en mundos cohesivos y experiencias memorables.</li>
+          <li data-translate="designerSkill2"><strong>Puente entre Disciplinas:</strong> Facilito la comunicación entre arte y programación para asegurar una visión unificada.</li>
+          <li data-translate="designerSkill3"><strong>Enfoque en el Jugador:</strong> Diseño mecánicas y sistemas que priorizan la diversión y el desafío.</li>
+        </ul>
+      </div>
+      <div class="contribution-card">
+        <h3><i class="fas fa-code"></i> <span data-translate="programmerTitle">Como Programador</span></h3>
+        <ul>
+          <li data-translate="programmerSkill1"><strong>Solidez Técnica y Versatilidad:</strong> Domino la lógica de programación en C++ (Unreal) y C# (Unity).</li>
+          <li data-translate="programmerSkill2"><strong>Resolución de Problemas:</strong> Descompongo desafíos complejos en soluciones eficientes y mantenibles.</li>
+          <li data-translate="programmerSkill3"><strong>Cultura de Equipo y Colaboración:</strong> Me integro en equipos ágiles, utilizando Git para un desarrollo limpio y colaborativo.</li>
+        </ul>
+      </div>
+      <div class="contribution-card">
+        <h3><i class="fas fa-fire"></i> <span data-translate="generalTitle">Generales</span></h3>
+        <ul>
+          <li data-translate="generalSkill1"><strong>Pasión y Compromiso:</strong> Mi trabajo es mi vocación, por lo que mi dedicación va más allá de un horario.</li>
+          <li data-translate="generalSkill2"><strong>Amante de las Mecánicas:</strong> Disfruto diseñando y programando sistemas de juego que sean innovadores y divertidos.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="experiencia">
+    <h2 data-translate="projectsTitle">Proyectos Destacados</h2>
+    <!-- Aquí irán tus proyectos -->
+    <div class="section-grid-container">
+      <div class="experiencia">
+        <div class="detalles">
+          <h3 data-project-id="cyber-runner">🚀 Cyber Runner <i class="fas fa-play-circle project-play-icon"></i></h3>
+          <p><strong data-translate="roleLabel">Rol:</strong><span data-translate="cyberRunnerRole"> Desarrollador Solitario</span></p>
+          <p><strong data-translate="engineLabel">Motor:</strong> Unreal Engine</p>
+          <p><strong data-translate="dateLabel">Fecha:</strong> 2023</p>
+        </div>
+        <ul class="responsabilidades">
+          <li data-translate="cyberRunnerResp1">🔹 Desarrollo completo del prototipo y mecánicas de juego.</li>
+          <li data-translate="cyberRunnerResp2">🔹 Integración de assets de alta calidad de Quixel Megascans para crear un entorno visualmente rico.</li>
+          <li data-translate="cyberRunnerResp3">🔹 Creación de efectos visuales (VFX) avanzados con el sistema Niagara.</li>
+          <li data-translate="cyberRunnerResp4">🔹 Implementación y personalización de personajes realistas utilizando MetaHuman.</li>
+        </ul>
+      </div>
+
+      <div class="experiencia">
+        <div class="detalles">
+          <h3 data-project-id="endless-season">🎨 Endless Season <i class="fas fa-play-circle project-play-icon"></i></h3>
+          <p><strong data-translate="roleLabel">Rol:</strong> Menu Artist & UI Programmer</p>
+          <p><strong data-translate="engineLabel">Motor:</strong> Unity</p>
+          <p><strong data-translate="dateLabel">Fecha:</strong> 2025</p>
+        </div>
+        <ul class="responsabilidades">
+          <li data-translate="endlessSeasonResp1">🔹 Diseño e implementación de una interfaz de usuario (UI) compleja y atractiva.</li>
+          <li data-translate="endlessSeasonResp2">🔹 Programación de paneles de menú interactivos que cambiaban dinámicamente según la estación del año en el juego.</li>
+          <li data-translate="endlessSeasonResp3">🔹 Mi primera experiencia sólida en un proyecto de equipo con Unity.</li>
+        </ul>
+      </div>
+
+      <div class="experiencia">
+        <div class="detalles">
+          <h3 data-project-id="experiment-ia">👾 ExperimentIA <i class="fas fa-play-circle project-play-icon"></i></h3>
+          <p><strong data-translate="roleLabel">Rol:</strong><span data-translate="experimentIARole"> Programador de Gameplay y IA</span></p>
+          <p><strong data-translate="engineLabel">Motor:</strong> Unity</p>
+          <p><strong data-translate="teamLabel">Equipo:</strong><span data-translate="experimentIATeam"> Colaboración en Equipo</span></p>
+        </div>
+        <ul class="responsabilidades">
+          <li data-translate="experimentIAResp1">🔹 Desarrollo de las mecánicas principales para un FPS de estilo 2.5D Pixel Art.</li>
+          <li data-translate="experimentIAResp2">🔹 Programación del comportamiento y la inteligencia artificial (IA) de múltiples tipos de enemigos.</li>
+          <li data-translate="experimentIAResp3">🔹 Diseño e implementación de un jefe final con distintas fases y habilidades de invocación de enemigos.</li>
+        </ul>
+      </div>
+
+      <div class="experiencia">
+        <div class="detalles">
+          <h3 data-project-id="oh-my-gods">📱 Oh My Gods! <i class="fas fa-play-circle project-play-icon"></i></h3>
+          <p><strong data-translate="roleLabel">Rol:</strong><span data-translate="ohMyGodsRole"> Programador de Sistemas y Economía</span></p>
+          <p><strong data-translate="studioLabel">Estudio:</strong><span data-translate="ohMyGodsStudio"> Bug & Play Studio (no oficial)</span></p>
+          <p><strong data-translate="dateLabel">Fecha:</strong><span data-translate="ohMyGodsDate"> Actual</span></p>
+        </div>
+        <ul class="responsabilidades">
+          <li data-translate="ohMyGodsResp1">🔹 Diseño y desarrollo de un sistema Gacha complejo, inspirado en referentes como *AFK Arena* y *Genshin Impact*.</li>
+          <li data-translate="ohMyGodsResp2">🔹 Implementación de sistema de "pity" y banners de temporada para la obtención de personajes.</li>
+          <li data-translate="ohMyGodsResp3">🔹 Creación de la economía del juego, gestionando monedas de pago y gratuitas.</li>
+          <li data-translate="ohMyGodsResp4">🔹 Programación del inventario del jugador, la tienda in-game y los sistemas de progresión de personajes (niveles y estrellas).</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="educacion">
+    <h2 data-translate="educationTitle">Educación</h2>
+    <!-- Tus estudios -->
+
+    <div class="section-grid-container">
+      <div class="educacion">
+        <div class="detalles">
+          <h3 data-translate="degreeTitle">🎓 Animación 3D, Juegos y Entornos Interactivos (Grado Superior)</h3>
+          <p><strong data-translate="dateLabel">📆 Fecha:</strong> 10-2023 - 06-2025</p>
+          <p><strong data-translate="institutionLabel">🏢 Centro de estudios:</strong> CCC Formación</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="habilidades">
+    <h2 data-translate="skillsTitle">Competencias Digitales</h2>
+    <div class="skills-cards-container">
+
+      <!-- Unreal Engine Card -->
+      <div class="skill-card" data-skill="unreal-engine">
+        <div class="card-inner">
+          <div class="card-front">
+            <h3 data-translate="unrealCardTitle">Unreal Engine</h3>
+            <i class="fas fa-gamepad"></i>
+          </div>
+          <div class="card-back">
+            <h4 data-translate="unrealCardTitle">Unreal Engine</h4>
+            <p data-translate="unrealCardDesc">Experiencia en desarrollo de videojuegos y entornos interactivos.</p>
+            <ul>
+              <li>Blueprints</li>
+              <li>C++</li>
+              <li>Niagara VFX</li>
+              <li>MetaHuman</li>
+            </ul>
+            <button class="invoke-button" data-skill="unreal-engine" data-translate="invokeButton">Invocar</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Unity Card -->
+      <div class="skill-card" data-skill="unity">
+        <div class="card-inner">
+          <div class="card-front">
+            <h3 data-translate="unityCardTitle">Unity</h3>
+            <i class="fas fa-cube"></i>
+          </div>
+          <div class="card-back">
+            <h4 data-translate="unityCardTitle">Unity</h4>
+            <p data-translate="unityCardDesc">Desarrollo de juegos 2D/3D, UI y sistemas de juego.</p>
+            <ul>
+              <li>C# Scripting</li>
+              <li>UI Toolkit</li>
+              <li>Mecanim</li>
+            </ul>
+            <button class="invoke-button" data-skill="unity" data-translate="invokeButton">Invocar</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- C++ Card -->
+      <div class="skill-card" data-skill="cpp">
+        <div class="card-inner">
+          <div class="card-front">
+            <h3>C++</h3>
+            <i class="fas fa-file-code"></i>
+          </div>
+          <div class="card-back">
+            <h4>C++</h4>
+            <p data-translate="cppCardDesc">Programación de bajo nivel y optimización para motores de juego.</p>
+            <ul>
+              <li data-translate="cppCardDetail1">POO</li>
+              <li data-translate="cppCardDetail2">Estructuras de Datos</li>
+              <li data-translate="cppCardDetail3">Algoritmos</li>
+            </ul>
+            <button class="invoke-button" data-skill="cpp" data-translate="invokeButton">Invocar</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- C# Card -->
+      <div class="skill-card" data-skill="csharp">
+        <div class="card-inner">
+          <div class="card-front">
+            <h3>C#</h3>
+            <i class="fas fa-code"></i>
+          </div>
+          <div class="card-back">
+            <h4>C#</h4>
+            <p data-translate="csharpCardDesc">Lenguaje principal para scripting en Unity y desarrollo de lógica de juego.</p>
+            <ul>
+              <li>Unity API</li>
+              <li data-translate="csharpCardDetail2">Eventos y Delegados</li>
+              <li data-translate="csharpCardDetail3">Corrutinas</li>
+            </ul>
+            <button class="invoke-button" data-skill="csharp" data-translate="invokeButton">Invocar</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Blueprints Card -->
+      <div class="skill-card" data-skill="blueprints">
+        <div class="card-inner">
+          <div class="card-front">
+            <h3 data-translate="blueprintsCardTitle">Blueprints</h3>
+            <i class="fas fa-project-diagram"></i>
+          </div>
+          <div class="card-back">
+            <h4 data-translate="blueprintsCardTitle">Blueprints (Unreal)</h4>
+            <p data-translate="blueprintsCardDesc">Programación visual para prototipado rápido y lógica de juego en Unreal Engine.</p>
+            <ul>
+              <li data-translate="blueprintsCardDetail1">Lógica de Gameplay</li>
+              <li data-translate="blueprintsCardDetail2">Interfaces</li>
+              <li data-translate="blueprintsCardDetail3">Macros</li>
+            </ul>
+            <button class="invoke-button" data-skill="blueprints" data-translate="invokeButton">Invocar</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Python Card -->
+      <div class="skill-card" data-skill="python">
+        <div class="card-inner">
+          <div class="card-front">
+            <h3>Python</h3>
+            <i class="fab fa-python"></i>
+          </div>
+          <div class="card-back">
+            <h4>Python</h4>
+            <p data-translate="pythonCardDesc">Scripting, automatización y herramientas para desarrollo de juegos.</p>
+            <ul>
+              <li data-translate="pythonCardDetail1">Automatización</li>
+              <li data-translate="pythonCardDetail2">Análisis de Datos</li>
+              <li data-translate="pythonCardDetail3">Herramientas de Pipeline</li>
+            </ul>
+            <button class="invoke-button" data-skill="python" data-translate="invokeButton">Invocar</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Diseño de Mecánicas Card -->
+      <div class="skill-card" data-skill="game-mechanics">
+        <div class="card-inner">
+          <div class="card-front">
+            <h3 data-translate="mechanicsCardTitle">Diseño de Mecánicas</h3>
+            <i class="fas fa-dice"></i>
+          </div>
+          <div class="card-back">
+            <h4 data-translate="mechanicsCardTitle">Diseño de Mecánicas</h4>
+            <p data-translate="mechanicsCardDesc">Creación de reglas y sistemas de juego atractivos y equilibrados.</p>
+            <ul>
+              <li data-translate="mechanicsCardDetail1">Prototipado</li>
+              <li data-translate="mechanicsCardDetail2">Balanceo</li>
+              <li data-translate="mechanicsCardDetail3">Iteración</li>
+            </ul>
+            <button class="invoke-button" data-skill="game-mechanics" data-translate="invokeButton">Invocar</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Programación de Gameplay Card -->
+      <div class="skill-card" data-skill="gameplay-programming">
+        <div class="card-inner">
+          <div class="card-front">
+            <h3 data-translate="gameplayCardTitle">Programación de Gameplay</h3>
+            <i class="fas fa-laptop-code"></i>
+          </div>
+          <div class="card-back">
+            <h4 data-translate="gameplayCardTitle">Programación de Gameplay</h4>
+            <p data-translate="gameplayCardDesc">Implementación de la lógica central y la interactividad del juego.</p>
+            <ul>
+              <li data-translate="gameplayCardDetail1">Control de Personajes</li>
+              <li data-translate="gameplayCardDetail2">Sistemas de Combate</li>
+              <li data-translate="gameplayCardDetail3">IA de Enemigos</li>
+            </ul>
+            <button class="invoke-button" data-skill="gameplay-programming" data-translate="invokeButton">Invocar</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Diseño de Sistemas de Juego Card -->
+      <div class="skill-card" data-skill="game-systems">
+        <div class="card-inner">
+          <div class="card-front">
+            <h3 data-translate="systemsCardTitle">Diseño de Sistemas</h3>
+            <i class="fas fa-cogs"></i>
+          </div>
+          <div class="card-back">
+            <h4 data-translate="systemsCardTitle">Diseño de Sistemas de Juego</h4>
+            <p data-translate="systemsCardDesc">Conceptualización y estructuración de la economía, progresión y otros sistemas.</p>
+            <ul>
+              <li data-translate="systemsCardDetail1">Economía del Juego</li>
+              <li data-translate="systemsCardDetail2">Progresión</li>
+              <li>Gacha Systems</li>
+            </ul>
+            <button class="invoke-button" data-skill="game-systems" data-translate="invokeButton">Invocar</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Blender Card -->
+      <div class="skill-card" data-skill="blender">
+        <div class="card-inner">
+          <div class="card-front">
+            <h3>Blender</h3>
+            <i class="fas fa-cube"></i>
+          </div>
+          <div class="card-back">
+            <h4>Blender</h4>
+            <p data-translate="blenderCardDesc">Modelado 3D, texturizado, rigging y animación para assets de juego.</p>
+            <ul>
+              <li data-translate="blenderCardDetail1">Modelado Hard Surface</li>
+              <li data-translate="blenderCardDetail2">Esculpido</li>
+              <li data-translate="blenderCardDetail3">Renderizado</li>
+            </ul>
+            <button class="invoke-button" data-skill="blender" data-translate="invokeButton">Invocar</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Krita Card -->
+      <div class="skill-card" data-skill="krita">
+        <div class="card-inner">
+          <div class="card-front">
+            <h3>Krita</h3>
+            <i class="fas fa-paint-brush"></i>
+          </div>
+          <div class="card-back">
+            <h4>Krita</h4>
+            <p data-translate="kritaCardDesc">Creación de arte 2D, texturas y concept art para videojuegos.</p>
+            <ul>
+              <li data-translate="kritaCardDetail1">Pintura Digital</li>
+              <li data-translate="kritaCardDetail2">Concept Art</li>
+              <li data-translate="kritaCardDetail3">Texturizado</li>
+            </ul>
+            <button class="invoke-button" data-skill="krita" data-translate="invokeButton">Invocar</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Git Card -->
+      <div class="skill-card" data-skill="git">
+        <div class="card-inner">
+          <div class="card-front">
+            <h3>Git</h3>
+            <i class="fas fa-code-branch"></i>
+          </div>
+          <div class="card-back">
+            <h4>Git</h4>
+            <p data-translate="gitCardDesc">Control de versiones para colaboración en equipos de desarrollo.</p>
+            <ul>
+              <li data-translate="gitCardDetail1">Repositorios</li>
+              <li data-translate="gitCardDetail2">Ramas</li>
+              <li data-translate="gitCardDetail3">Merge/Rebase</li>
+            </ul>
+            <button class="invoke-button" data-skill="git" data-translate="invokeButton">Invocar</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Microsoft Teams Card -->
+      <div class="skill-card" data-skill="microsoft-teams">
+        <div class="card-inner">
+          <div class="card-front">
+            <h3>Microsoft Teams</h3>
+            <i class="fas fa-users"></i>
+          </div>
+          <div class="card-back">
+            <h4>Microsoft Teams</h4>
+            <p data-translate="teamsCardDesc">Herramienta de comunicación y colaboración para equipos de trabajo.</p>
+            <ul>
+              <li data-translate="teamsCardDetail1">Comunicación</li>
+              <li data-translate="teamsCardDetail2">Gestión de Proyectos</li>
+              <li data-translate="teamsCardDetail3">Reuniones</li>
+            </ul>
+            <button class="invoke-button" data-skill="microsoft-teams" data-translate="invokeButton">Invocar</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- AI Tools Card (Special) -->
+      <div class="skill-card ai-card" data-skill="ai-tools">
+        <div class="card-inner">
+          <div class="card-front">
+            <h3 data-translate="aiCardTitle">Herramientas de IA</h3>
+            <div class="ai-icons-container">
+              <i class="ai-icon fas fa-comments" style="--i:1;" title="ChatGPT"></i>
+              <i class="ai-icon fas fa-gem" style="--i:2;" title="Gemini"></i>
+              <i class="ai-icon fas fa-palette" style="--i:3;" title="Midjourney"></i>
+              <i class="ai-icon fas fa-book" style="--i:4;" title="NotebookLM"></i>
+              <i class="ai-icon fas fa-music" style="--i:5;" title="Suno"></i>
+            </div>
+          </div>
+          <div class="card-back">
+            <h4 data-translate="aiCardTitle">Herramientas de IA</h4>
+            <p data-translate="aiCardDesc">Dominio de herramientas de IA generativa para arte, texto y desarrollo.</p>
+            <ul>
+              <li>ChatGPT</li>
+              <li>Gemini</li>
+              <li>Midjourney</li>
+              <li>NotebookLM</li>
+              <li>Suno</li>
+            </ul>
+            <button class="invoke-button" data-skill="ai-tools" data-translate="invokeButton">Invocar</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Invocation Pop-up -->
+    <div id="invocation-popup" class="invocation-popup">
+      <div class="invocation-content">
+        <span class="close-invocation">&times;</span>
+        <h3 id="invoked-skill-title"></h3>
+        <p id="invoked-skill-description"></p>
+        <div id="invoked-skill-details"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="idiomas">
+    <h2 data-translate="languagesTitle">Elige tu Filo</h2>
+    <div class="katana-container-wrapper">
+      <!-- Katana para Español -->
+      <div class="katana-item" data-lang="es">
+        <img src="images/katana_es.png" alt="Katana para Español" class="katana-img">
+        <div class="language-details">
+          <span class="language-level" data-translate="nativeLang">Nativo</span>
+        </div>
+      </div>
+
+      <!-- Contenedor para la Frase -->
+      <div id="quote-container" class="quote-container">
+        <p id="language-quote-text"></p>
+      </div>
+
+      <!-- Katana para Inglés -->
+      <div class="katana-item" data-lang="en">
+        <img src="images/katana_eu.png" alt="Katana para Inglés" class="katana-img">
+        <div class="language-details">
+          <span class="language-level">C1</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+
+  
+
+   
+  <!-- Video Pop-up -->
+  <div id="video-popup" class="video-popup">
+    <div class="video-popup-content">
+      <span class="close-button">&times;</span>
+      <div id="video-container">
+        <video id="project-video" controls autoplay muted></video>
+        <div id="coming-soon-glitch" class="glitch-container">
+          <div class="glitch-text" data-text="PRÓXIMAMENTE">PRÓXIMAMENTE</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Achievement Toasts Container -->
+  <div id="toast-container"></div>
+
+  <!-- Final Achievement Pop-up -->
+  <div id="achievement-popup" class="video-popup">
+    <div class="video-popup-content">
+      <span class="close-button">&times;</span>
+      <div class="achievement-content">
+        <h2 data-translate="finalAchievementTitle">¡Has conocido a Blending EngineK!</h2>
+        <p data-translate="finalAchievementP1">Gracias por explorar mi mundo. Ahora sabes de lo que soy capaz. ¿Forjamos juntos la próxima leyenda?</p>
+        <p data-translate="finalAchievementP2">Contáctame en: <a href="mailto:blending.enginek@gmail.com">blending.enginek@gmail.com</a></p>
+      </div>
+    </div>
+  </div>
+   
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
